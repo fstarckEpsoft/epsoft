@@ -7,106 +7,113 @@
   <title>Epsoft</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/2f86bfefa9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./script.js" defer></script>
+
 </head>
 
 <body>
 
   <header>
-
     <nav>
-      <img src="./assets/images/logo.png" alt="logo da epsoft">
+      <a href=""><img src="./assets/images/logo.png" alt="logo da epsoft"></a>
       <ul class="links-header">
-        <li><a href="#">Quem Somos</a></li>
-        <li>
-          <span>Soluções <i class="fa-solid fa-caret-down"></i></span>
-          <!--           <ul>
-            <li><a href="#">Data Loss Prevention</a></li>
-            <li><a href="#">Discovery</a></li>
-          </ul> -->
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li>Soluções <i class="fa-solid fa-caret-down"></i>
+          <div class="header-submenu">
+            <ul>
+              <li><a href="./pages/data-loss-prevention.html">Data Loss Prevention</a></li>
+              <li><a href="./pages/discovery.html">Discovery</a></li>
+            </ul>
+          </div>
         </li>
-        <li><a href="#">Seja Parceiro</a></li>
-        <li><a href="#">Blog</a></li>
-        <li>
-          <span>E-books <i class="fa-solid fa-caret-down"></i></span>
-          <!--           <ul>
-            <li><a href="#">Jornada LGPD</a></li>
-            <li><a href="#">Aspectos Práticos da LGPD</a></li>
-            <li><a href="#">Perguntas e Respostas sobre a LGPD</a></li>
-            <li><a href="#">5 anos da Lei Geral de Proteção de Dados</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <span>Portal da Privacidade <i class="fa-solid fa-caret-down"></i></span>
-          <!--           <ul>
-            <li><a href="#">Aviso de Privacidade</a></li>
-            <li><a href="#">Código de Ética e Conduta</a></li>
-            <li><a href="#">Canal de Denúncias</a></li>
-            <li><a href="#">Dúvidas Frequentes</a></li>
-            <li><a href="#">Incidentes com Dados Pessoais</a></li>
-          </ul> -->
-        </li>
-        <li><a href="#">Contato</a></li>
 
+        <li><a href="./pages/epartner-epsoft.html">Seja Parceiro</a></li>
+
+        <li>E-books <i class="fa-solid fa-caret-down"></i>
+          <div class="header-submenu">
+            <ul>
+              <li><a href="./pages/jornada-lgpd.html">Jornada LGPD</a></li>
+              <li><a href="./pages/aspectos-praticos-da-lgpd.html">Aspectos Práticos da LGPD</a></li>
+              <li><a href="./pages/dez-perguntas-e-respostas-sobre-a-lgpd.html">Perguntas e Respostas sobre a LGPD</a></li>
+              <li><a href="./pages/cinco-anos-da-lei-geral-de-protecao-de-dados.html">5 anos da Lei Geral de Proteção de Dados</a></li>
+            </ul>
+          </div>
+
+        </li>
+        <li>Portal da Privacidade <i class="fa-solid fa-caret-down"></i>
+          <div class="header-submenu">
+            <ul>
+              <li><a href="./pages/aviso-de-privacidade.html">Aviso de Privacidade</a></li>
+              <li><a href="./pages/codigo-de-conduta.html">Código de Ética e Conduta</a></li>
+              <li><a href="./pages/canal-de-denuncias.html">Canal de Denúncias</a></li>
+              <li><a href="./pages/duvidas-frequentes.html">Dúvidas Frequentes</a></li>
+              <li><a href="./pages/incidentes-com-dados-pessoais.html">Incidentes com Dados Pessoais</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main>
-    <section class="main-hero">
+    <section class="main-hero" id="hero">
       <div class="main-hero-content">
         <h1>Evite o vazamento de dados sensíveis da sua empresa com o <strong>Data Loss Prevention</strong> Epsoft.</h1>
-        <a href="#">quero testar grátis</a>
+        <a href="#contato">quero testar grátis</a>
       </div>
     </section>
-    <section class="main-dlp">
+    <section class="main-dlp" id="dlp">
       <div>
         <h2>data loss prevention</h2>
         <hr />
       </div>
       <div class="main-dlp-content">
-        <ul>
-          <li>acesso remoto</li>
-          <li>dashboard</li>
-          <li>alertas</li>
-          <li>evidências</li>
-          <li>relatórios</li>
-          <li>avisos</li>
+        <ul id="menu">
+          <li onclick="mostrarConteudo('acesso-remoto')" class="menu-item active">acesso remoto</li>
+          <li onclick="mostrarConteudo('dashboard')" class="menu-item">dashboard</li>
+          <li onclick="mostrarConteudo('alertas')" class="menu-item">alertas</li>
+          <li onclick="mostrarConteudo('evidencias')" class="menu-item">evidências</li>
+          <li onclick="mostrarConteudo('relatorios')" class="menu-item">relatórios</li>
+          <li onclick="mostrarConteudo('avisos')" class="menu-item">avisos</li>
         </ul>
-
-        <div class="acesso-remoto">
-          <img src="./assets/images/dlp-acesso-remoto.png" alt="logo da epsoft">
-          <p>Instalação, configuração e classificação das atividades, acompanhamento e gestão em tempo real.</p>
+        <div class="imagem-texto">
+          <div class="acesso-remoto descricao-img-dlp">
+            <img src="./assets/images/dlp-acesso-remoto.png" alt="logo da epsoft">
+            <p>Instalação, configuração e classificação das atividades, acompanhamento e gestão em tempo real.</p>
+          </div>
+          <div class="dashboard descricao-img-dlp">
+            <img src="./assets/images/dlp-dashboard.png" alt="logo da epsoft">
+            <p>Contribui para otimização do trabalho e decisões ágeis.</p>
+          </div>
+          <div class="alertas descricao-img-dlp">
+            <img src="./assets/images/dlp-alertas.png" alt="logo da epsoft">
+            <p>Orientam o trabalho para acompanhamento em tempo real, apenas do que de fato é importante conforme regras
+              de negócio.</p>
+          </div>
+          <div class="evidencias descricao-img-dlp">
+            <img src="./assets/images/dlp-evidencias.png" alt="logo da epsoft">
+            <p>Todas as operações como cópias, envios de anexos e gravações de documentos são rastreados quando há
+              presença de dados sensíveis.</p>
+          </div>
+          <div class="relatorios descricao-img-dlp">
+            <img src="./assets/images/dlp-relatorios.png" alt="logo da epsoft">
+            <p>Resumos gerais de segurança para entrega de relatórios para auditoria. O DPO (Data Protection Officer) ou
+              responsável também tem suas ações logadas para alerta de compliance.</p>
+          </div>
+          <div class="avisos descricao-img-dlp">
+            <img src="./assets/images/dlp-avisos.png" alt="logo da epsoft">
+            <p>Geração automática de evidências em caso de disparo de alertas. Reinicie a estação de trabalho a qualquer
+              momento. Estamos em constante evolução.</p>
+          </div>
         </div>
-        <!--<div class="dashboard">
-          <img src="./assets/images/dlp-dashboard.png" alt="logo da epsoft">
-          <p>Contribui para otimização do trabalho e decisões ágeis.</p>
-        </div>
-        <div class="alertas">
-          <img src="./assets/images/dlp-alertas.png" alt="logo da epsoft">
-          <p>Orientam o trabalho para acompanhamento em tempo real, apenas do que de fato é importante conforme regras
-            de negócio.</p>
-        </div>
-        <div class="evidencias">
-          <img src="./assets/images/dlp-evidencias.png" alt="logo da epsoft">
-          <p>Todas as operações como cópias, envios de anexos e gravações de documentos são rastreados quando há
-            presença de dados sensíveis.</p>
-        </div>
-        <div class="relatorios">
-          <img src="./assets/images/dlp-relatorios.png" alt="logo da epsoft">
-          <p>Resumos gerais de segurança para entrega de relatórios para auditoria. O DPO (Data Protection Officer) ou
-            responsável também tem suas ações logadas para alerta de compliance.</p>
-        </div>
-        <div class="avisos">
-          <img src="./assets/images/dlp-avisos.png" alt="logo da epsoft">
-          <p>Geração automática de evidências em caso de disparo de alertas. Reinicie a estação de trabalho a qualquer
-            momento. Estamos em constante evolução.</p>
-        </div> -->
       </div>
     </section>
-    <section>
-      <div>
-        <div>
+
+    <section class="main-diferenciais" id="diferenciais">
+      <div class="main-diferenciais-cards">
+        <div class="main-diferenciais-card">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px"
             y="0px" width="550px" height="500px" viewBox="0 0 550 500" xml:space="preserve">
             <g>
@@ -125,7 +132,7 @@
           <p>De fácil instalação e com uma interface intuitiva, o sistema permite a utilização por qualquer
             profissional.</p>
         </div>
-        <div>
+        <div class="main-diferenciais-card">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px"
             y="0px" width="550px" height="500px" viewBox="0 0 550 500" xml:space="preserve">
             <g>
@@ -144,7 +151,7 @@
           <p>Através de alertas, é possível acompanhar em tempo real o que foi executado e o que necessita de ação
             imediata.</p>
         </div>
-        <div>
+        <div class="main-diferenciais-card">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px"
             y="0px" width="550px" height="500px" viewBox="0 0 550 500" xml:space="preserve">
             <g>
@@ -160,7 +167,7 @@
           <p>A solução exige pouca CPU, é um produto otimizado, de simples parametrização e não conflita com outras
             aplicações.</p>
         </div>
-        <div>
+        <div class="main-diferenciais-card">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px"
             y="0px" width="550px" height="500px" viewBox="0 0 550 500" xml:space="preserve">
             <g>
@@ -189,182 +196,223 @@
           </p>
         </div>
       </div>
-      <a href="#">solicitar teste grátis</a>
+      <a href="#contato">solicitar teste grátis</a>
     </section>
-    <section>
-      <h2>perguntas frequentes</h2>
-      <hr />
+
+    <section class="main-perguntas" id="perguntas">
       <div>
-        <h4>Para utilizar as soluções Epsoft, é preciso ter algum tipo de conhecimento prévio?</h4>
-        <p>A solução é bem prática, amigável e com poucas telas de gestão. Disponibilizamos aos clientes treinamento da
-          solução para utilização e acompanhamento das Estações de Trabalho.</p>
+        <h2>perguntas frequentes</h2>
         <hr />
-        <h4>Os sistemas interferem nas atividades do colaborador?</h4>
-        <p>As soluções Epsoft não são invasivas. Elas atuam em background, consumindo em média menos de 5% de CPU e não
-          conflitando com aplicações existentes.</p>
+      </div>
+      <div class="main-perguntas-content">
+        <h4 onclick="toggleAnswer('pergunta1')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Para utilizar as soluções
+          Epsoft, é preciso ter algum tipo de conhecimento prévio?</h4>
+        <p id="pergunta1-answer" style="display:none;">A solução é bem prática, amigável e com poucas telas de gestão.
+          Disponibilizamos aos clientes treinamento da solução para utilização e acompanhamento das Estações de
+          Trabalho.</p>
         <hr />
-        <h4>Podemos diferenciar o nível de monitoramento as estações de trabalho?</h4>
-        <p>Sim, o cliente poderá decidir a configuração adequada para cada Estação de trabalho conforme as regras de
-          negócio. Trabalhamos com o conceito Grupo DLP (Data Loss Prevention).</p>
+        <h4 onclick="toggleAnswer('pergunta2')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Os sistemas interferem nas
+          atividades do colaborador?</h4>
+        <p id="pergunta2-answer" style="display:none;">As soluções Epsoft não são invasivas. Elas atuam em background,
+          consumindo em média menos de 5% de CPU e não conflitando com aplicações existentes.</p>
         <hr />
-        <h4>O que os alarmes informam ao DPO (Data Protection Officer)?</h4>
-        <p>Todas as operações como cópias, envios de anexos e gravações de documentos são rastreados quando há presença
-          de dados sensíveis.</p>
+        <h4 onclick="toggleAnswer('pergunta3')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Podemos diferenciar o nível
+          de monitoramento as estações de trabalho?</h4>
+        <p id="pergunta3-answer" style="display:none;">Sim, o cliente poderá decidir a configuração adequada para cada
+          Estação de trabalho conforme as regras de negócio. Trabalhamos com o conceito Grupo DLP (Data Loss
+          Prevention).</p>
         <hr />
-        <h4>Quais a ações que o DPO poderá tomar quando receber um alerta?</h4>
-        <p>Conforme cada alerta o DPO poderá tomar a ação que for mais adequada, tais como: Encerrar aplicações, Inserir
-          comentários ou simplesmente Gerenciar a ação.</p>
+        <h4 onclick="toggleAnswer('pergunta4')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;O que os alarmes informam ao
+          DPO (Data Protection Officer)?</h4>
+        <p id="pergunta4-answer" style="display:none;">Todas as operações como cópias, envios de anexos e gravações de
+          documentos são rastreados quando há presença de dados sensíveis.</p>
         <hr />
-        <h4>Os dados são criptografados?</h4>
-        <p>Sim. Os dados são criptografados e configurados diretamente na solução.</p>
+        <h4 onclick="toggleAnswer('pergunta5')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Quais a ações que o DPO
+          poderá tomar quando receber um alerta?</h4>
+        <p id="pergunta5-answer" style="display:none;">Conforme cada alerta o DPO poderá tomar a ação que for mais
+          adequada, tais como: Encerrar aplicações, Inserir comentários ou simplesmente Gerenciar a ação.</p>
+        <hr />
+        <h4 onclick="toggleAnswer('pergunta6')"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Os dados são criptografados?
+        </h4>
+        <p id="pergunta6-answer" style="display:none;">Sim. Os dados são criptografados e configurados diretamente na
+          solução.</p>
         <hr />
       </div>
     </section>
-    <section>
-      <h2>quem somos</h2>
-      <hr />
+
+    <section class="main-quem-somos" id="quem-somos">
       <div>
+        <h2>quem somos</h2>
+        <hr />
+      </div>
+      <div class="main-quem-somos-content">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VI1QQOAUTjY?si=bCtEG7kQkSmd4-Ag"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player" frameborder="0" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         <p>Em 2018 resolvemos aplicar todo o nosso conhecimento em Software e Tecnologia para criar uma solução que
           pudesse ajudar o mercado contra o vazamento de dados sensíveis das empresas. Neste momento, surge a solução da
-          Epsoft Privacy & Security.<br />Aqui surge o nosso DLP (Data Loss Prevention), a primeira plataforma
+          Epsoft Privacy & Security.<br /><br />Aqui surge o nosso DLP (Data Loss Prevention), a primeira plataforma
           brasileira que protege a sua empresa contra o vazamento de dados. Nossa solução DLP, foi projetada para
           monitorar todas as atividades de usuários de estações de trabalho e principalmente alertar e bloquear
           tentativas, intencionais ou não, de capturar dados conﬁdenciais e/ou sensíveis e que devam ser protegidos
           pelas organizações (DLP – Data Loss Prevention).</p>
       </div>
     </section>
-    <section>
-      <h2>clientes</h2>
-      <hr />
+
+    <section class="main-clientes" id="clientes">
       <div>
-        <div>
+        <h2>clientes</h2>
+        <hr />
+      </div>
+      <div class="main-clientes-content">
+        <div class="main-clientes-card">
           <p>“Plataforma eficiente que entrega a solução que preciso na minha empresa, para manter a segurança dos dados
             para que possamos estar compliance com a LGPD. Trouxe a tranquilidade essencial que necessitava com a equipe
             em home-office, além de oferecer um atendimento e suporte de qualidade.”</p>
-          <div>
+          <div class="main-clientes-pessoa">
             <img src="./assets/images/perfil-Kelly-M2G.png" alt="perfil-cliente">
-            <p>Kelly Peralta</p>
-            <p>COO M2G</p>
+            <div class="main-clientes-assinatura">
+              <p class="main-clientes-nome">Kelly Peralta</p>
+              <p class="main-clientes-cargo">COO M2G</p>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="main-clientes-card">
           <p>“As principais preocupações eram a melhoria dos quesitos: privacidade, autonomia e controle, prevenção de
             uso indevido, segurança cibernética, confiança e transparência em conformidade regulatória. Ainda mais
             quando foi necessário estarmos em Teletrabalho. Obedecendo à tríade de segurança da informação
             (Confidencialidade, Integridade e Disponibilidade), melhoramos os instrumentos para o processo de controle
             em conformidade com a LGPD.”</p>
-          <div>
+          <div class="main-clientes-pessoa">
             <img src="./assets/images/perfil-carmem-elite.png" alt="perfil-cliente">
-            <p>Carmem Maria Benedetti</p>
-            <p>DPO EliteSoft</p>
+            <div class="main-clientes-assinatura">
+              <p class="main-clientes-nome">Carmem Maria Benedetti</p>
+              <p class="main-clientes-cargo">DPO EliteSoft</p>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="main-clientes-card">
           <p>"Durante o processo de pesquisas de aplicações voltadas para a LGPD, nenhuma solução era brasileira e as
             que tinham não eram viáveis para implantação. Nessas pesquisas surgiu a solução da Epsoft com o DLP e o Data
             Discovery, a diretoria gostou do que foi apresentado, e estamos com essa parceria desde 2022, acompanhando o
             processo de evolução da ferramenta com feedbacks e atualizações, a Epsoft conta com uma equipe muito
             atenciosa e profissional, sempre disposta a ouvir e solucionar os problemas de seus clientes."</p>
-          <div>
+          <div class="main-clientes-pessoa">
             <img src="./assets/images/perfil-edgard-hb.png" alt="perfil-cliente">
-            <p>Edgard Júnior Neves</p>
-            <p>Analista de TI HB Laborátorios e Soluções</p>
+            <div class="main-clientes-assinatura">
+              <p class="main-clientes-nome">Edgard Júnior Neves</p>
+              <p class="main-clientes-cargo">Analista de TI HB Laborátorios e Soluções</p>
+            </div>
           </div>
         </div>
-
       </div>
       <div>
-        <img src="./assets/images/logo-m2g.png" alt="logo-m2g">
-        <img src="./assets/images/logo-elite.png" alt="logo-elite">
-        <img src="./assets/images/logo-hblab.png" alt="logo-hblab">
+        <img class="main-clientes-logo" src="./assets/images/logo-m2g.png" alt="logo-m2g">
+        <img class="main-clientes-logo" src="./assets/images/logo-elite.png" alt="logo-elite">
+        <img class="main-clientes-logo" src="./assets/images/logo-hblab.png" alt="logo-hblab">
       </div>
     </section>
-    <section>
-      <h2>contato</h2>
-      <hr />
-      <p>Preencha o formulário e agende seu teste.</p>
 
-      <form action="/submit" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <section class="main-contato" id="contato">
+      <div class="main-contato-card">
+        <div>
+          <h2>contato</h2>
+          <hr />
+        </div>
+        <p>Preencha o formulário e agende seu teste.</p>
+        <div class="main-contato-form">
+          <form action="/submit" method="post">
+            <label for="nome">Nome: *</label>
+            <input type="text" id="nome" name="nome" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="idade">Telefone:</label>
-        <input type="number" id="telefone" name="telefone" required>
+            <label for="telefone">Telefone: *</label>
+            <input type="number" id="telefone" name="telefone" required>
 
-        <label for="idade">Empresa:</label>
-        <input type="number" id="empresa" name="empresa" required>
+            <div class="divide-linha">
 
-        <label for="idade">Cargo:</label>
-        <input type="number" id="cargo" name="cargo" required>
+              <div class="divide-linha1">
+                <div>
+                  <label for="empresa">Empresa: *</label>
+                  <input type="text" id="empresa" name="empresa" required>
+                </div>
+                <div>
+                  <label for="cargo">Cargo: *</label>
+                  <input type="text" id="cargo" name="cargo" required>
+                </div>
+              </div>
+              <div class="divide-linha1">
+                <div>
+                  <label for="segmento">Segmento: *</label>
+                  <input type="text" id="segmento" name="segmento" required>
+                </div>
+                <div>
+                  <label for="tamanho-empresa">Tamanho da empresa: *</label>
+                  <select id="tamanho-empresa" name="tamanho-empresa">
+                    <option value="masculino">Até 20 colaboradores</option>
+                    <option value="feminino">De 21 a 100 colaboradores</option>
+                    <option value="feminino">De 101 a 500 colaboradores</option>
+                    <option value="feminino">De 501 a 1000 colaboradores</option>
+                    <option value="feminino">Acima de 1001 colaboradores</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-        <label for="idade">Segmento:</label>
-        <input type="number" id="segmento" name="segmento" required>
-
-        <label for="tamanho-empresa">Tamanho da empresa:</label>
-        <select id="tamanho-empresa" name="tamanho-empresa">
-          <option value="masculino">Até 20 colaboradores</option>
-          <option value="feminino">De 21 a 100 colaboradores</option>
-          <option value="feminino">De 101 a 500 colaboradores</option>
-          <option value="feminino">De 501 a 1000 colaboradores</option>
-          <option value="feminino">Acima de 1001 colaboradores</option>
-        </select>
-
-        <input type="checkbox" id="confirmar" onchange="checkValidity()">
-        <label for="confirmar">Ao informar meus dados, eu concordo com o Aviso de Privacidade e receber comunicações via
-          e-mail e/ou WhatsApp sobre assuntos relacionados a Epsoft Privacy & Security.</label>
-
-        <input type="submit" id="submitBtn" value="Teste grátis 10 dias">
-      </form>
+            <div class="main-contato-confirma">
+              <input type="checkbox" id="confirmar" onchange="checkValidity()">
+              <label for="confirmar">Ao informar meus dados, eu concordo com o <a href="">Aviso de Privacidade</a> e
+                receber
+                comunicações via e-mail e/ou WhatsApp sobre assuntos relacionados a Epsoft Privacy & Security.</label>
+            </div>
+            <input class="main-contato-submit" type="submit" id="submitBtn" value="Teste grátis 10 dias">
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <div>
-        <img src="./assets/images/logo.png" alt="logo da epsoft">
+    <div class="footer-links">
+      <div class="footer-logo">
+        <a href=""><img src="./assets/images/logo.png" alt="logo da epsoft"></a>
       </div>
-      <div>
+      <div class="footer-action-link">
+        <p>Sobre Nós</p>
         <ul>
-          <li>Sobre Nós</li>
-          <li>Nossa História</li>
-          <li>Blog</li>
-          <li>Imprensa</li>
-          <li>Jornada LGPD</li>
-          <li>Aspectos Práticos da LGPD</li>
+          <li><a href="#quem-somos">Nossa História</a></li>
+          <li><a href="https://globoplay.globo.com/v/11011722/">Imprensa</a></li>
+          <li><a href="./pages/jornada-lgpd.html">Jornada LGPD</a></li>
+          <li><a href="./pages/aspectos-praticos-da-lgpd.html">Aspectos Práticos da LGPD</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-action-link">
+        <p>Suporte</p>
         <ul>
-          <li>Suporte</li>
-          <li>FAQ</li>
-          <li>Contato</li>
-          <li>Seja Parceiro</li>
-          <li>Canal de Denúncias</li>
-          <li>Aviso de Privacidade</li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#perguntas">FAQ</a></li>
+          <li><a href="./pages/epartner-epsoft.html">Seja Parceiro</a></li>
+          <li><a href="./pages/canal-de-denuncias.html">Canal de Denúncias</a></li>
+          <li><a href="./pages/aviso-de-privacidade.html">Aviso de Privacidade</a></li>
         </ul>
       </div>
-      <div>
-        <dvi>Logo empresa etica</dvi>
-        <dvi>
-          <ul>
-            <li>WhatsApp</li>
-            <li>linkedin</li>
-            <li>instagram</li>
-            <li>facebook</li>
-            <li>youtube</li>
-          </ul>
-        </dvi>
+      <div class="footer-selos">
+        <img src="./assets/images/selo-abes.png" alt="selo abes empresa ética">
+        <div class="footer-redes">
+          <a href="https://api.whatsapp.com/send?phone=551150393210"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/company/epsoft-privacy-security"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/epsoft_brasil/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/FlashSafe-102630208512610"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCxZZc5EwYHcv1AwGaygUaOw"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
     </div>
-    <div>
-      <p>© 2024 Epsoft Privacy & Security | Epsoft Sistemas S.A CNPJ: 53.024.360/0001-90</p>
+    <div class="footer-assinatura">
+      <p>© <span id="ano-atual"></span> Epsoft Privacy & Security | Epsoft Sistemas S.A CNPJ: 53.024.360/0001-90</p>
     </div>
   </footer>
 
