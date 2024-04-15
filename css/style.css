@@ -534,14 +534,11 @@ nav>a>img {
 }
 
 .main-contato-form {
-  background-color: greenyellow;
-
   display: flex;
   flex-direction: column;
 
   input,
   select {
-    background-color: #003F7D;
     width: 100%;
     height: 2.85rem;
     border: 1px solid var(--cor-texto-escuro);
@@ -551,8 +548,6 @@ nav>a>img {
   }
 
   label {
-    background-color: #D78F2E;
-
     display: block;
     margin: 0.5rem 0;
     font-size: 1.15rem;
@@ -704,13 +699,17 @@ footer {
 
   .divide-linha1 {
     display: block;
-  
+
   }
 
   .footer-links {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+  }
+
+  .main-perguntas-content {
+    padding: 4em 1.5em;
   }
 }
 
