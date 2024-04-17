@@ -648,6 +648,12 @@ footer {
     width: 55px;
     height: auto;
   }
+
+  a img{
+    height: 70px;
+    width: auto;
+  }
+
 }
 
 .footer-redes {
@@ -663,6 +669,147 @@ footer {
   text-align: center;
   margin: 2rem 0 1rem 0;
 }
+
+
+.main-portal-privacidade {
+  background-color: var(--cor-card-claro);
+  color: var(--cor-texto-escuro);
+}
+
+.main-portal-privacidade-container {
+  max-width: 910px;
+  margin: 3rem auto;
+  padding: 0 5rem;
+  line-height: 2rem;
+  font-size: 1.15rem;
+
+
+  h1 {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.42rem;
+    color: var(--cor-texto-escuro);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    a {
+      color: #CC3366;
+    }
+  }
+
+  .duvidas-pergunta {
+    margin-top: 2rem;
+  }
+
+  .duvidas-resposta {
+    margin-top: -10px;
+    padding-left: 18px;
+
+  }
+
+  ul {
+    margin-bottom: 2rem;
+    li {
+      list-style: disc;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  ol {
+    margin-bottom: 2rem;
+
+    li {
+      list-style: lower-roman;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .ol-incidentes {
+    li {
+      list-style: decimal;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+  }
+}
+
+/* E-PARTNER */
+
+.main-hero-partner {
+  position: relative;
+
+  color: var(--cor-texto-titulo);
+  height: 42.85rem;
+
+  background-image: url(../assets/images/banner-partner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.main-hero-content-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 21em;
+  font-size: 2.3em;
+
+
+  h2 {
+    color: var(--cor-texto-claro);
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+  }
+
+  img {
+    color: var(--cor-texto-claro);
+    position: relative;
+    z-index: 2;
+
+    width: 215px;
+    height: auto;
+
+  }
+}
+
+.main-hero-partner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+  z-index: 1;
+}
+
+.partner-como-funciona {
+  background-color: var(--cor-card-claro);
+  height: 400px;
+  color: var(--cor-texto-escuro);
+
+}
+
+.partner-como-funciona-content {
+  padding-top: 80px;
+}
+
+
 
 @media (max-width:768px) {
 
