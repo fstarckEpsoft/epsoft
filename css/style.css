@@ -704,14 +704,8 @@ footer {
 }
 
 @media (max-width:800px) {
-  nav {
-    background-color: #cc3366;
-  }
-
-
 
   .header-menu {
-    background-color: #003F7D;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -726,7 +720,7 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 80px;
     right: 0;
     width: auto;
     background-color: var(--cor-primaria);
