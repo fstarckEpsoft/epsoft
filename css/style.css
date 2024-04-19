@@ -1301,115 +1301,15 @@ footer {
 }
 
 
-@media (max-width:768px) {
-
-  .main-dlp-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem 0;
-    justify-content: center;
-    z-index: 2;
-
-
-  }
-
-  #menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap !important;
-    width: 100vw;
-    height: auto;
-    padding: 0 10vw;
-    margin-bottom: 2rem;
-    gap: 0.6rem;
-    z-index: 2;
-
-
-  }
-
-  .divide-linha1 {
-    display: block;
-
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .main-perguntas-content {
-    padding: 4em 1.5em;
-  }
-}
-
-@media (max-width:800px) {
-
-  .header-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  .header-menu #burguer {
-    display: block;
-  }
-
-  .header-menu .links-header {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: auto;
-    background-color: var(--cor-primaria);
-    border-radius: 10px;
-    padding: 20px;
-    z-index: 2;
-
-  }
-
-  .header-menu .links-header li {
-    margin: 10px 0;
-    z-index: 2;
-
-
-  }
-}
-
-
-@media (max-width:1000px) {
-
-  .main-quem-somos-content {
-    flex-direction: column;
-    margin: 2.4rem 15rem 4rem 15rem;
-
-    p {
-      width: 70vw;
-    }
-  }
-}
-
-@media (max-width:1250px) {
-  .partner-vantagens-content {
-    flex-direction: column;
-  }
-}
-
-
-
-
 /* ***DATA LOSS PREVENTION*** */
 
-.main-hero-da {
+.main-hero-dlp {
   position: relative;
 
   color: var(--cor-texto-titulo);
   height: 42.85rem;
 
-  background-image: url(../assets/images/bkg-da.jpg);
+  background-image: url(../assets/images/bkg-dlp.jpg);
   background-size: cover;
   background-position: center;
 
@@ -1475,7 +1375,7 @@ footer {
   }
 }
 
-.main-hero-da::before {
+.main-hero-dlp::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1684,3 +1584,619 @@ footer {
   }
 }
 
+.produto-contato {
+  position: relative;
+  color: var(--cor-texto-claro);
+  background-image: url(../assets/images/bkg-contato.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.produto-contato::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 81, 116, 0.7);
+  z-index: 1;
+}
+
+.produto-contato-card {
+  background-color: var(--cor-card-claro);
+  margin: 4.4rem 1rem;
+  border-radius: 1rem;
+  color: var(--cor-texto-escuro);
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  max-width: 550px;
+  padding: 30px 50px;
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    color: var(--cor-texto-escuro);
+    margin: 0 0 0.6rem 0;
+    text-align: center;
+  }
+
+  hr {
+    width: 70%;
+    margin: auto;
+  }
+
+  p {
+    margin: 1.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+.produto-contato-form {
+  display: flex;
+  flex-direction: column;
+
+  input,
+  select {
+    width: 100%;
+    height: 2.85rem;
+    border: 1px solid var(--cor-texto-escuro);
+    border-radius: 0.3rem;
+    padding: 0 0.6rem;
+
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+}
+
+.produto-contato-confirma {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0;
+
+  a {
+    color: #cc3366;
+  }
+
+  input {
+    height: 1rem;
+    width: auto;
+    margin: 1rem;
+  }
+}
+
+.produto-contato-submit {
+  background-color: var(--cor-botao2);
+  color: var(--cor-texto-claro);
+
+  width: 21.4rem;
+  height: 3.6rem;
+  border: none !important;
+  border-radius: 0.36rem;
+  text-transform: uppercase;
+  font-size: 1.43rem;
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width:768px) {
+
+  .main-dlp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    justify-content: center;
+    z-index: 2;
+
+
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    width: 100vw;
+    height: auto;
+    padding: 0 10vw;
+    margin-bottom: 2rem;
+    gap: 0.6rem;
+    z-index: 2;
+
+
+  }
+
+  .divide-linha1 {
+    display: block;
+
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .main-perguntas-content {
+    padding: 4em 1.5em;
+  }
+
+  .partner-contato-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .ebook-contato-jornada-content {
+    flex-direction: column;
+    padding: 3rem;
+
+  }
+}
+
+@media (max-width:800px) {
+
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .header-menu #burguer {
+    display: block;
+  }
+
+  .header-menu .links-header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: auto;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+
+  }
+
+  .header-menu .links-header li {
+    margin: 10px 0;
+    z-index: 2;
+
+
+  }
+}
+
+
+@media (max-width:1000px) {
+
+  .main-quem-somos-content {
+    flex-direction: column;
+    margin: 2.4rem 15rem 4rem 15rem;
+
+    p {
+      width: 70vw;
+    }
+  }
+
+  .divide-colunas {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:1250px) {
+  .partner-vantagens-content {
+    flex-direction: column;
+  }
+}
+
+
+
+/* ***EBOOKS*** */
+
+.ebook {
+  
+  h2 {
+    color: var(--cor-texto-escuro);
+    margin: 0;
+    padding: 0;
+    font-size: 2.15rem;
+    font-weight: 600;
+
+  }
+
+  h3 {
+    font-size: 2rem;
+
+  }
+
+  hr {
+    width: 58%;
+    margin: .8rem auto 2rem auto;
+  }
+
+  p {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .btn-chamada {
+    background-color: var(--cor-botao1);
+    color: var(--cor-texto-claro);
+    margin: 22px;
+
+    width: 21.4rem;
+    height: 3.6rem;
+    border-radius: 0.36rem;
+    text-transform: uppercase;
+    font-size: 1.145rem;
+    font-weight: 500;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.ebook-contato-jornada {
+  position: relative;
+  color: var(--cor-texto-claro);
+  background-image: url(../assets/images/bkg-jornada.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.ebook-contato-jornada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 1;
+}
+
+.ebook-contato-jornada-aspectos {
+  position: relative;
+  color: var(--cor-texto-claro);
+  background-image: url(../assets/images/bkg-ebook-aspectos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.ebook-contato-jornada-aspectos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 1;
+}
+
+.ebook-contato-jornada-perguntas {
+  position: relative;
+  color: var(--cor-texto-claro);
+  background-image: url(../assets/images/bkg-ebook-perguntas.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.ebook-contato-jornada-perguntas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 1;
+}
+
+.ebook-contato-jornada-cincoanos {
+  position: relative;
+  color: var(--cor-texto-claro);
+  background-image: url(../assets/images/bkg-ebook-cincoanos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.ebook-contato-jornada-cincoanos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 1;
+}
+
+.ebook-contato-jornada-content {
+  display: flex;
+  z-index: 2;
+  max-width: 1000px !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ebook-contato-jornada-call {
+  max-width: 450px;
+  margin-right: 3rem;
+
+  h3 , p {
+    text-align: start;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+.ebook-contato-jornada-card {
+  background-color: var(--cor-card-claro);
+  margin: 4.4rem 1rem;
+  border-radius: 1rem;
+  color: var(--cor-texto-escuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  padding: 30px 50px;
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    color: var(--cor-texto-escuro);
+    margin: 0 0 0.6rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: none;
+  }
+
+  hr {
+    width: 70%;
+    margin: auto;
+  }
+
+  p {
+    margin: 1.5rem;
+    font-size: 1.15rem;
+    text-align: center;
+  }
+}
+
+.ebook-contato-jornada-form {
+  display: flex;
+  flex-direction: column;
+
+  input,
+  select {
+    width: 100%;
+    height: 2.85rem;
+    border: 1px solid var(--cor-texto-escuro);
+    border-radius: 0.3rem;
+    padding: 0 0.6rem;
+
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+}
+
+.partner-divide-linha1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  input,
+  select {
+    min-width: 220px;
+  }
+
+}
+
+.ebook-contato-jornada-confirma {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0;
+
+  a {
+    color: #cc3366;
+  }
+
+  input {
+    height: 1rem;
+    width: auto;
+    margin: 1rem;
+  }
+}
+
+.ebook-contato-jornada-submit {
+  background-color: var(--cor-botao2);
+  color: var(--cor-texto-claro);
+
+  width: 21.4rem;
+  height: 3.6rem;
+  border: none !important;
+  border-radius: 0.36rem;
+  text-transform: uppercase;
+  font-size: 1.43rem;
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ebook-jornada-conteudo {
+  background-color: var(--cor-card-claro);
+
+}
+
+.ebook-jornada-conteudo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto-escuro);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+
+
+
+}
+
+.ebook-jornada-importante {
+  background-color: var(--cor-card-escuro);
+}
+
+
+
+
+
+.ebook-jornada-importante-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto-escuro);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+
+
+
+
+  .divide-colunas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    div{
+      height: 200px;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+
+
+.ebook-jornada-quemsomos {
+  background-color: var(--cor-card-claro);
+}
+
+.ebook-jornada-quemsomos-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto-escuro);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+
+  
+  p {
+    text-align: start;
+
+  }
+
+  .divide-colunas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iframe-container {
+      margin-left: 3rem;
+      iframe {
+        margin: 3rem 0;
+
+        width: 480px !important;
+        height: 270px !important;
+      }
+    }
+
+  }
+
+}
+
+.ebook-jornada-quemsomos {
+  position: relative;
+  background-image: url(../assets/images/bkg-ebook-importante.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ebook-jornada-quemsomos::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(256, 256, 256, 0.57);
+    z-index: 1;
+  
+}
