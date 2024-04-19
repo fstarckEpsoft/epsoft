@@ -64,12 +64,12 @@
   </header>
 
   <main>
-    <section class="main-hero-dlp" id="hero-dlp">
+    <section class="main-hero-dlp" id="hero-dlp" style="  background-image: url(../assets/images/bkg-da.jpg);">
       <div class="main-hero-content-dlp">
 
         <h1>Data Discovery</h1>
         <p>Mapeie os dados da sua organização com nossa solução Data Discovery — Ativo ou Scan. Mapeamento dos dados pessoais e sensíveis da sua empresa, garantia do direito dos titulares e em conformidade com a LGPD.</p>
-        <a href="#contato">Veja mais</a>
+        <a href="#produtos">Veja mais</a>
       </div>
     </section>
     <section class="dlp-conteudo">
@@ -81,7 +81,7 @@
       </div>
     </section>
     <section class="dlp-diferenciais">
-      <div class="dlp-diferenciais-content">
+      <div class="dlp-diferenciais-content" id="produtos">
         <h2>Discovery Ativo</h2>
         <div class="dlp-diferenciais-content-icons">
           <div class="dlp-diferenciais-content-icon">
@@ -131,7 +131,7 @@
     </section>
 
 
-    <section class="partner-contato" id="contato">
+    <section class="partner-contato" id="contato" style="background-image: url(../assets/images/bkg-discovery.jpg);">
       <div class="partner-contato-content">
         <div class="partner-contato-call">
           <h3>Agende uma demonstração!</h3>
@@ -139,60 +139,60 @@
           <p>Complete o formulário ao lado com os seus dados e da sua empresa e solicite uma demonstração da ferramenta.</p>
           <p></p>
         </div>
-        <div class="partner-contato-card">
+        <div class="produto-contato-card">
           <div>
             <h2>contato</h2>
             <hr />
           </div>
-          <div class="partner-contato-form">
-            <form action="/submit" method="post">
-              <label for="nome">Nome: *</label>
-              <input type="text" id="nome" name="nome" required>
-  
-              <label for="email">Email: *</label>
-              <input type="email" id="email" name="email" required>
-  
-              <label for="telefone">Telefone: *</label>
-              <input type="number" id="telefone" name="telefone" required>
-  
-              <div class="divide-linha">
-  
-                <div class="divide-linha1">
-                  <div>
-                    <label for="empresa">Empresa: *</label>
-                    <input type="text" id="empresa" name="empresa" required>
-                  </div>
-                  <div>
-                    <label for="cargo">Cargo: *</label>
-                    <input type="text" id="cargo" name="cargo" required>
-                  </div>
+          <div class="produto-contato-form">
+          <form action="/submit" method="post">
+            <label for="nome">Nome: *</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone: *</label>
+            <input type="number" id="telefone" name="telefone" required>
+
+            <div class="divide-linha">
+
+              <div class="divide-linha1">
+                <div>
+                  <label for="empresa">Empresa: *</label>
+                  <input type="text" id="empresa" name="empresa" required>
                 </div>
-                <div class="divide-linha1">
-                  <div>
-                    <label for="segmento">Segmento: *</label>
-                    <input type="text" id="segmento" name="segmento" required>
-                  </div>
-                  <div>
-                    <label for="tamanho-empresa">Tamanho da empresa: *</label>
-                    <select id="tamanho-empresa" name="tamanho-empresa">
-                      <option value="masculino">Até 20 colaboradores</option>
-                      <option value="feminino">De 21 a 100 colaboradores</option>
-                      <option value="feminino">De 101 a 500 colaboradores</option>
-                      <option value="feminino">De 501 a 1000 colaboradores</option>
-                      <option value="feminino">Acima de 1001 colaboradores</option>
-                    </select>
-                  </div>
+                <div>
+                  <label for="cargo">Cargo: *</label>
+                  <input type="text" id="cargo" name="cargo" required>
                 </div>
               </div>
-  
-              <div class="main-contato-confirma">
-                <input type="checkbox" id="confirmar" onchange="checkValidity()">
-                <label for="confirmar">Ao informar meus dados, eu concordo com o <a href="">Aviso de Privacidade</a> e
-                  receber
-                  comunicações via e-mail e/ou WhatsApp sobre assuntos relacionados a Epsoft Privacy & Security.</label>
+              <div class="divide-linha1">
+                <div>
+                  <label for="segmento">Segmento: *</label>
+                  <input type="text" id="segmento" name="segmento" required>
+                </div>
+                <div>
+                  <label for="tamanho-empresa">Tamanho da empresa: *</label>
+                  <select id="tamanho-empresa" name="tamanho-empresa">
+                    <option value="<20>">Até 20 colaboradores</option>
+                    <option value="21-100">De 21 a 100 colaboradores</option>
+                    <option value="101-500">De 101 a 500 colaboradores</option>
+                    <option value="501-1000">De 501 a 1000 colaboradores</option>
+                    <option value=">1000">Acima de 1001 colaboradores</option>
+                  </select>
+                </div>
               </div>
-              <input class="main-contato-submit" type="submit" id="submitBtn" value="Teste grátis 10 dias">
-            </form>
+            </div>
+
+            <div class="main-contato-confirma">
+              <input type="checkbox" id="confirmar" onchange="checkValidity()">
+              <label for="confirmar">Ao informar meus dados, eu concordo com o <a href="">Aviso de Privacidade</a> e
+                receber
+                comunicações via e-mail e/ou WhatsApp sobre assuntos relacionados a Epsoft Privacy & Security.</label>
+            </div>
+            <input class="main-contato-submit" type="submit" id="submitBtn" value="Agendar demonstração">
+          </form>
           </div>
         </div>
       </div>

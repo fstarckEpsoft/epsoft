@@ -1403,13 +1403,13 @@ footer {
 
 /* ***DATA LOSS PREVENTION*** */
 
-.main-hero-dlp {
+.main-hero-da {
   position: relative;
 
   color: var(--cor-texto-titulo);
   height: 42.85rem;
 
-  background-image: url(../assets/images/bkg-dlp.jpg);
+  background-image: url(../assets/images/bkg-da.jpg);
   background-size: cover;
   background-position: center;
 
@@ -1475,7 +1475,7 @@ footer {
   }
 }
 
-.main-hero-dlp::before {
+.main-hero-da::before {
   content: "";
   position: absolute;
   top: 0;
