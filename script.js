@@ -1,4 +1,3 @@
-
 /* *** CRIA UM EFEITO DE ROLAGEM SUAVE AO CLICAR NOS LINKS DA PÁGINA *** */
 $(document).ready(function () {
   $('a[href^="#"]').on('click', function (event) {
@@ -14,7 +13,6 @@ $(document).ready(function () {
 
 /* *** ATUALIZA O ANO NO RODAPÉ DO SITE *** */
 document.getElementById("ano-atual").textContent = new Date().getFullYear();
-
 
 function mostrarConteudo(conteudo) {
   let divsImagens = document.querySelectorAll('.imagem-texto > div');
@@ -42,8 +40,6 @@ function toggleAnswer(id) {
     answer.style.display = 'none';
   }
 }
-
-
 
 function toggleMenu() {
   let linksHeader = document.getElementById("linksHeader");
